@@ -1,0 +1,51 @@
+import React from "react";
+import NavBar from "../common/NavBar";
+
+export default function Add_Material() {
+  const center = "Material";
+  const last = "Add";
+  return (
+    <>
+      <div>
+        <NavBar center={center} last={last} />
+        <div className="max-w-[1000px] m-auto mt-4 border border-[#0000004a] rounded-[5px]">
+          <div className="bg-[#F1F5F9] px-4 py-3 border border-[#0000004a] rounded-[5px] flex items-center justify-between flex-wrap">
+            <h1 className="text-[20px] font-[600]">Add Material</h1>
+          </div>
+          <form action="" className="p-2">
+            <div className="flex flex-col mt-2">
+              <label className="mb-1">
+                <b>Category Name</b>
+              </label>
+              <input
+                type="text"
+                className=" border border-[#0000004a] rounded-[5px] outline-0 px-3 py-1 "
+                placeholder="Enter Material Name"
+                required
+              />
+            </div>
+
+            <div className="flex flex-col mt-4">
+              <label className="mb-1">
+                <b>Order</b>
+              </label>
+              <input
+                type="text"
+                className=" border border-[#0000004a] rounded-[5px] outline-0 px-3 py-1 "
+                placeholder="Enter Order"
+                required
+              />
+            </div>
+
+            <button
+              className="bg-[#7E22CE] text-[#fff] py-2 px-3 rounded-[8px] font-[500]  cursor-pointer my-4"
+              onSubmit={(e) => e.preventDefault()}
+            >
+              Add Material
+            </button>
+          </form>
+        </div>
+      </div>
+    </>
+  );
+}
