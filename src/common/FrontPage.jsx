@@ -45,7 +45,8 @@ export default function FrontPage() {
 
                 {/* <Link to={`${signIn == "" ? "/" : "/dashboard"}`}> */}
                 <button className="bg-[#2563EB] text-[#fff] py-2 px-3 rounded-[8px] text-[15px] font-[500]  cursor-pointer mt-2 w-full">
-                  Add Category
+                  {/* Add Category */}
+                  Sign In
                 </button>
                 {/* </Link> */}
               </form>
