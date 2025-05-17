@@ -1,2 +1,5 @@
 @import "tailwindcss";
 
+.quill {
+  height: 150px;
+}

@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import NavBar from "../common/NavBar";
 import $ from "jquery";
 import "dropify/dist/js/dropify.min.js";
 import "dropify/dist/css/dropify.min.css";
+
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
 
 export default function Add_Product() {
   const center = "Product";
@@ -18,6 +21,7 @@ export default function Add_Product() {
       },
     });
   });
+
   return (
     <>
       <div>
@@ -263,6 +267,9 @@ export default function Add_Product() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="mt-5 h-[200px]">
+            <ReactQuill theme="snow" className="" />
           </div>
 
           <button
