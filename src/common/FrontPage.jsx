@@ -25,7 +25,7 @@ export default function FrontPage() {
                 <div className="flex flex-col mt-2">
                   <label htmlFor="">Email</label>
                   <input
-                    type="text"
+                    type="email"
                     className="p-2 border border-[#00000034] bg-[#F9FAFB] rounded-[6px] mt-1"
                     placeholder="Enter Email"
                     required
